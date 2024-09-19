@@ -2,7 +2,7 @@ import pandas as pd
 import pickle
 import json
 from flask import Flask, Response
-from sklearn.model_selection import train_test_split
+# from sklearn.model_selection import train_test_split
 
 app = Flask(__name__)
 
