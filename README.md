@@ -1,1 +1,1 @@
-# Python MachinE Learning
+# Python Machine Learning
