@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import sklearn
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import pickle
@@ -24,4 +25,4 @@ model.fit(X_train, y_train)
 # Save the trained model
 with open("model_linear_regression.pkl", "wb+") as model_file:
     pickle.dump(model, model_file)
-
+sudo apt 
