@@ -11,9 +11,9 @@ class DataLoader:
         """
         Initialization
         """
-        self.dataframe:DataFrame=None
+        self.dataframe:DataFrame= None
 
-    def read_excel_csv_dataframe(self,file_path:str):
+    def read_excel_csv_dataframe(self,file_path:str)->DataFrame:
         """
         Read/Excel or CSV from the path and
         create the dataframe
@@ -24,4 +24,17 @@ class DataLoader:
             Dataframe
 
         """
-        self.dataframe
+        self.dataframe= pd.read_csv(file_path)
+        return self.dataframe
+
+    def read_json_dataframe(self, file_path:str)->DataFrame:
+        """
+
+        Args:
+            file_path:
+
+        Returns:
+            Dataframe
+        """
+        self.dataframe = pd.read_csv(file_path)
+        return self.dataframe
