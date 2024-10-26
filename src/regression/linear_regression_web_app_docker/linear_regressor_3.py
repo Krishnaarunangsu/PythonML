@@ -25,4 +25,4 @@ model.fit(X_train, y_train)
 # Save the trained model
 with open("model_linear_regression.pkl", "wb+") as model_file:
     pickle.dump(model, model_file)
-sudo apt 
+

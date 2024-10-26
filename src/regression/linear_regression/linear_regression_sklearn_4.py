@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import pickle
 import json
+import seaborn as sns
 
 from pandas.core.interchange.dataframe_protocol import DataFrame
 from sklearn.linear_model import LinearRegression
@@ -49,6 +50,30 @@ class SimpleLinearRegression:
         except KeyError as ke:
             print('Key Not Found in Employee Dictionary:', ke)
 
+    def visualize_data(self, x_axis:str, x_axis_2:str, y_axis:str, hue:str):
+        """
+
+        Args:
+            x_axis:
+            y_axis:
+
+        Returns:
+
+        """
+        # Bar Plot
+        sns.barplot(x=x_axis, y=y_axis, hue=hue, data=self.data_train)
+        plt.show()
+
+        # Point Plot
+        sns.pointplot(x=x_axis_2, y=y_axis, hue=hue, data=self.data_train,
+                      palette={
+                          "male": "blue",
+                          "female": "pink"
+                      },
+                      markers=['*', 'o'],
+                      linestyles=['-','--'])
+        plt.show()
+
 if __name__=="__main__":
      simple_linear_regression=SimpleLinearRegression()
      data_path_dir_initial = "C:\\Arunangsu\\PythonML\\data\\"
@@ -63,6 +88,16 @@ if __name__=="__main__":
 
      }
      simple_linear_regression.load_dataset(file_details_json)
+     x1 = "Embarked"
+     y = "Survived"
+     hue="Sex"
+     x2="Pclass"
+
+     # Bar Plot
+     simple_linear_regression.visualize_data(x1,x2, y,hue)
+
+     # Point Plot
+
 
 
 

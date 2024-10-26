@@ -38,3 +38,19 @@ class DataLoader:
         """
         self.dataframe = pd.read_csv(file_path)
         return self.dataframe
+
+    def read_url_dataframe(self,url:str,sep:str,header):
+        """
+        Read the url to get the data
+        and build the dataframe
+        Args:
+            url:
+            sep:
+            header:
+
+        Returns:
+            Dataframe
+
+        """
+        self.dataframe=pd.read_csv(url, sep=sep, header=header)
+        return self.dataframe

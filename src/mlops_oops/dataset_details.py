@@ -19,6 +19,10 @@ class DatasetDetails:
         """
         self.dataset = dataset
         print(f'Dataset Shape:{self.dataset.shape}')
-        print(f'Dataset Summary:{self.dataset.head()}')
-        print(f'Dataset Information:{self.dataset.info()}')
-        print(f'Dataset Description:{self.dataset.describe()}')
+        print(f'Dataset Summary:\n{self.dataset.head()}')
+        print('Dataset Information')
+        print('************************************')
+        self.dataset.info()
+        print(f'Dataset Description')
+        print('************************************')
+        print(self.dataset.describe())
