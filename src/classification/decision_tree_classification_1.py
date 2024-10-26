@@ -113,7 +113,7 @@ class DecisionTreeClassification:
         self.split_data()
 
         # Creating the Classifier Model
-        self.clf_using_entropy = DecisionTreeClassifier(criterion ='gini',
+        self.clf_using_entropy = DecisionTreeClassifier(criterion ='entropy',
                                             random_state = 100, max_depth = 3,
                                             min_samples_leaf = 5)
         # Performing Training
