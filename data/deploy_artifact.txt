@@ -1,0 +1,8 @@
+https://www.analyticsvidhya.com/blog/2022/05/a-complete-guide-for-deploying-ml-models-in-docker/
+https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers.html
+https://www.analyticsvidhya.com/blog/2021/10/an-end-to-end-guide-on-approaching-an-ml-problem-and-deploying-it-using-flask-and-docker/
+https://engineering.rappi.com/serve-your-first-model-with-scikit-learn-flask-docker-df95efbbd35e
+https://blog.logrocket.com/build-deploy-flask-app-using-docker/
+https://medium.com/devops-and-sre-learning/docker-based-deployment-of-machine-learning-model-using-flask-90d811d3eb86
+https://lopezco.github.io/ml-flask-api/readme.html
+https://github.com/kpsijil2/BreastCancer/blob/main/app.py
