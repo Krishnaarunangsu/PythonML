@@ -19,3 +19,5 @@ classifier.fit(X_train, y_train)
 
 y_pred = classifier.predict(X_test)
 print(f'Prediction:\n{y_pred}')
+
+# https://www.kaggle.com/code/armagansarikey/breast-cancer-prediction-with-xgboost/notebook
